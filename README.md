@@ -11,7 +11,7 @@ Don't worry if it isn't immediately clear how to solve them, work through differ
 ## Getting Started
 
 * Fork and clone this repo, and cd into python-hash-table-challenges
-* each challenge is in a `.py` file so you can work on them one at time and use the command `python <filename>.py` to check your work
+* each challenge is in a `.py` file so you can work on them one at time and use the command `python3 <filename>.py` to check your work
 * the challenges are ranked from least to most challenging, so start with number one
 
 ---

@@ -29,4 +29,18 @@ the character d occurs 1 times
 '''
 
 def character_count(string):
-  pass
+  # dictionary as a character hash table
+  character_table = {}
+
+  #loop over the letters
+  for letter in string:
+    if letter not in character_table:
+      character_table[letter] = 1
+    else:
+      character_table[letter] = character_table[letter] + 1
+
+  for letter in character_table:
+    print(f'the character {letter} occurs {character_table[letter]} times')
+
+string = 'banana'
+character_count(string)

@@ -26,12 +26,12 @@ Output: 10
 def find_it(li):
 
   hash_table = {}
-  
+
   for num in li:
-    if num not in hash_table:
-      hash_table[num] = 1
+    if num in hash_table:
+      hash_table[num] += 1
     else:
-      hash_table[num] = hash_table[num] + 1
+      hash_table[num] = 1
 
   for num in hash_table:
     if hash_table[num] % 2 != 0:

@@ -34,13 +34,13 @@ def character_count(string):
 
   #loop over the letters
   for letter in string:
-    if letter not in character_table:
-      character_table[letter] = 1
+    if letter in character_table:
+      character_table[letter] += 1
     else:
-      character_table[letter] = character_table[letter] + 1
+      character_table[letter] = 1
 
-  for letter in character_table:
-    print(f'the character {letter} occurs {character_table[letter]} times')
+  for key in character_table:
+    print(f'the character {key} occurs {character_table[key]} times')
 
 string = 'banana'
 character_count(string)
